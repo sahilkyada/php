@@ -7,7 +7,7 @@
   if(!isset($_SESSION['id'])){
       header('location: index.php');
   }else{
-      $sid = isset($_SESSION['id']);
+      $sid = $_SESSION['id'];
 
       $sq = "SELECT * FROM admin WHERE id=$sid";
 
